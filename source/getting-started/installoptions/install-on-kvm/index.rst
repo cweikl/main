@@ -69,7 +69,7 @@ Der KVM-Host sollte zusammengefasst gemäß o.g. Minimalanforderungen folgende M
     Entweder bekommt er von einem Router per DHCP eine IP-Adresse, Gateway- und DNS-Server oder man trägt diese Daten von Hand ein
     Sobald alles eingerichtet ist, bekommt der KVM-Host eine IP-Adresse im Schulnetz und die Firewall OPNsense® stellt den Internet-Zugang für alle VMs und den KVM-Host bereit
 
-  .. hint:: Virtualisierungs-Hosts sollten wie andere Infrastrukturgeräte (Switche usw.) grundsätzlich niemals im gleichen Netz wie Geräte sein, auf denen nicht adminsistrative Nutzer zugriff haben. So wirdsichergestellt, dass diese nicht von ihnen angegriffen werden können. In dieser Dokumentation wird zur Vereinfachung der Fall dokumentiert, dass der KVM-Host zu Beginn im externen Netz mit Internet-Zugriff und nach Abschluss der Installation im internen Schulnetz mit Internet-Zugriff via OPNsense®-Firewall befindet. Für den letztendlichen Einsatz sollte dieses bedacht und entsprechend angepasst werden.
+  .. hint:: Virtualisierungs-Hosts sollten wie andere Infrastrukturgeräte (Switche usw.) grundsätzlich niemals im gleichen Netz wie Geräte sein, auf denen nicht adminsistrative Nutzer zugriff haben. So wird sichergestellt, dass diese nicht von innen angegriffen werden können. In dieser Dokumentation wird zur Vereinfachung der Fall dokumentiert, dass der KVM-Host zu Beginn im externen Netz mit Internet-Zugriff und nach Abschluss der Installation im internen Schulnetz mit Internet-Zugriff via OPNsense®-Firewall befindet. Für den letztendlichen Einsatz sollte dieses bedacht und entsprechend angepasst werden.
 
 Ein PC/Laptop der als Adminstrations-Zugang eingerichtet wird, muss für die Installation mit dem entsprechende Netzwerk verbunden sein. Im letztendlichen linuxmuster.net-Intranet kann dieser dann für die Pflege der Virtuellen Maschinen eingesetzt werden. Dieser erhält dann die folgenden Einstellungen in dieser Beschreibung:
 
@@ -94,7 +94,7 @@ Wir beschreiben hier die Installation von dem Erstellen eines Bootmediums bis zu
 Erstellen eines USB-Sticks zur Installation des KVM-Host 
 --------------------------------------------------------
 
-.. _Download: https://releases.ubuntu.com/18.04.5/
+.. _Download: https://releases.ubuntu.com/18.04.6/
 
 Es wird für die Installation des KVM-Hosts ein Ubuntu Server 64bit in der Version 18.04 LTS verwendet. Welches du unter "Server install image" auf der Ubuntu-Seite zum Download_ findest. Diese iso-Datei muss auf ein Bootmedium so kopiert werden, dass sich der zukünftige KVM-Host von diesem Medium starten lässt.
 
@@ -279,7 +279,7 @@ Unter `Mount` wählst du `Andere` und gibst dort dann wie gezeigt `/var/lib/libv
    :align: center
    :alt: 
 
-Bevor die von dir vorgenommenen Änderungen auf die Festplatte geschrieben werden, wird dir eine Übersicht deiner getroffenen Auswahl angezeigt. Mit `Erledigt` akzeptierst du von dir gemachten Einstallungen nach einer letzten Überprüfung.
+Bevor die von dir vorgenommenen Änderungen auf die Festplatte geschrieben werden, wird dir eine Übersicht deiner getroffenen Auswahl angezeigt. Mit `Erledigt` akzeptierst du von dir gemachten Einstellungen nach einer letzten Überprüfung.
 
 .. figure:: ../media/ubuntu-installation_021_hdd-configuration-confirm.png
    :align: center
@@ -490,7 +490,7 @@ Nach der Installation der KVM-Software ist die Netzwerksituation folgende: ``vir
 
    $ ip -br addr list
    lo               UNKNOWN        127.0.0.1/8 ::1/128 
-   enp0s8           DOWN        
+   enp0s18          DOWN        
    enp0s17          UP             192.168.1.2/16 fe80::ae1c:ba12:6490:f75d/64
    virbr0           DOWN           192.168.122.1/24 
    virbr0-nic       DOWN           
@@ -501,16 +501,12 @@ Im nächsten Schritt wird die direkte Verbindung des KVM-Hosts mit dem Internet 
     
     *  Zuletzt kann der KVM-Host auch über die Brücke ``br-red`` eine IP-Adresse ins Internet bekommen, genau wie er über die Brücke ``br-server`` auch im pädagogischen Netzwerk auftauchen kann. Letzteres ist nicht zu empfehlen.
 
-.. hint:: Komplett raus? Tests erforderlich
-
 .. hint::
 
    Die Netzwerkkonfiguration wird seit Ubuntu 18.04 standardmäßig über netplan realisiert. Wer seinen KVM-Host von früheren Ubuntu-Versionen updatet, bei dem wird nicht automatisch `netplan` installiert, sondern `ifupdown` wird mit der Konfigurationsdatei ``/etc/network/interfaces`` beibehalten.
 
 Namen der Netzwerkkarten
 ------------------------
-
-.. todo:: Ändere enp0s18 in enp0s8
 
 Mit dem folgenden Befehl 
 
@@ -554,7 +550,7 @@ Diese Schnittstelle wird dann auch mit der Brücke ``br-red`` verbunden.
      version: 2
      renderer: networkd
      ethernets:
-       enp0s8:
+       enp0s18:
          dhcp4: no
        enp0s17:
          dhcp4: no
