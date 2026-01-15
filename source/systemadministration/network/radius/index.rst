@@ -372,6 +372,7 @@ Wenn es beispielsweise ein Schülernetz ohne Druckerzugriff und ein Lehrernetz m
 Im Folgenden gehen wir davon aus, dass das Schülernetz die VLAN-ID 10 und das Lehrernetz die VLAN-ID 20 hat.
 
 Als erstes muss mit ``apt install freeradius-ldap`` das freeradius-ldap-modul installiert werden.
+Wechsle mit ``cd /etc/freeradius/3.0/mods-enabled/`` in das Verzeichnis **/etc/freeradius/3.0/mods-enabled/**.
 Dann wird ldap mit ``ln -s ../mods-available/ldap ldap`` aktiviert.
 In ``/etc/freeradius/3.0/mods-enabled/ldap`` müssen folgende Eintragungen gemacht/angepasst werden:
 
@@ -496,7 +497,7 @@ Wenn alles geklappt hat, sind die Netzwerke wie folgt aufgeführt.
    :alt: Radius: VLAN 02
    :align: center
 
-Jetzt muss dem Unifi-Controller noch mitgeteilt werden, das der RADIUS die VLAN-IDs fürs WLAN liefert. In **Einstellungen -> Übersicht** ist ganz unten die RADIUS-Einstellung.
+Jetzt muss dem Unifi-Controller noch mitgeteilt werden, dass der RADIUS die VLAN-IDs fürs WLAN liefert. In **Einstellungen -> Übersicht** ist ganz unten die RADIUS-Einstellung.
 Mit einem Klick auf den Radius-Server öffnen sich die Einstellungen. Dort muss ein Haken bei **Unterstützung von RADIUS zugewiesenen VLANs** -> **Drahtlose Netzwerke** gesetzt werden.
 
 .. image:: media/RADIUS_unifi.png
