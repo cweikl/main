@@ -372,7 +372,7 @@ Wenn es beispielsweise ein Schülernetz ohne Druckerzugriff und ein Lehrernetz m
 Im Folgenden gehen wir davon aus, dass das Schülernetz die VLAN-ID 10 und das Lehrernetz die VLAN-ID 20 hat.
 
 Als erstes muss mit ``apt install freeradius-ldap`` das freeradius-ldap-modul installiert werden.
-Wechsel mit ``cd /etc/freeradius/3.0/mods-enabled/`` in das Verzeichnis **/etc/freeradius/3.0/mods-enabled/**.
+Wechsle mit ``cd /etc/freeradius/3.0/mods-enabled/`` in das Verzeichnis **/etc/freeradius/3.0/mods-enabled/**.
 Dann wird ldap mit ``ln -s ../mods-available/ldap ldap`` aktiviert.
 In ``/etc/freeradius/3.0/mods-enabled/ldap`` müssen folgende Eintragungen gemacht/angepasst werden:
 
