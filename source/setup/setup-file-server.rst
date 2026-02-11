@@ -208,7 +208,7 @@ Hierzu gibst Du als Benutzer root auf dem AD folgenden Befehl ein:
 
    rsync -av --delete -e ssh /srv/samba/schools/default-school/ root@10.0.0.2:/srv/samba/schools/default-school/
    
-Als Ziel ist auf dem File-Server der Schulname anzugeben, wie Du diesen zuvor mit dem linuxmuster-filserver setup eingerichtet hattest.
+Als Ziel ist auf dem File-Server der Schulname anzugeben, wie Du diesen zuvor mit dem linuxmuster-fileserver setup eingerichtet hattest.
    
 
 Aktualisierung der Freigaben
