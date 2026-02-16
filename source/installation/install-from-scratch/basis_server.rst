@@ -169,7 +169,7 @@ Für die weitere Installation benötigst Du zwei unterschiedliche Speichermedien
 
 Dabei ist es egal ob es sich dabei um |...| 
 
-* |...| eine reale Festplatte mit zwei Partionen.
+* |...| eine reale Festplatte mit zwei Partitionen.
 * |...| zwei reale Festplatten.
 * |...| zwei virtuelle Festplatten handelt.
 
@@ -230,7 +230,7 @@ Danach gelangst Du zu nachstehendem Bildschirm.
 
    Speicherplatzkonfiguration
 
-Lasse das `zweite Speichermedium unkonfiguriert`.
+Lasse das ``zweite Speichermedium unkonfiguriert``. Diese wird später vom Skript ``lmn-prepare`` vorbereitet.
 
 Für das Setup werden noch weitere Partitionen benötigt, die so ohne weitere Angabe von dem später beschriebenen Skript ``lmn-prepare`` genutzt werden.
 
@@ -249,7 +249,7 @@ Für das Setup werden noch weitere Partitionen benötigt, die so ohne weitere An
 
 .. attention::
 
-   Unser lmn-prepare nimmt Dir die nötigen vorbereitenden Aktionen ab. Du läßt also das `zweite Speichermedium unkonfiguriert`.
+   Unser lmn-prepare nimmt Dir die nötigen vorbereitenden Aktionen ab. Du läßt also das ``zweite Speichermedium unkonfiguriert``.
 
 Speicherplatzkonfiguration übernehmen
 -------------------------------------
