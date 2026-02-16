@@ -170,6 +170,14 @@ Nachdem Du als Benutzer ``linuxadmin`` am file-server angemeldet bist, wechselst
 Fileserver Installation
 =======================
 
+Das später zu installierende Paket ``linuxmuster-fileserver`` installiert den Zeitserver ``ntpsec``. Dies steht im Konflikt mit dem bereits installierten Zeitserver ``systemd-timesync``.
+
+Deinstalliere daher diesen zuvor mit:
+
+.. code::
+
+   sudo apt purge systemd-timesyncd
+
 Aktualisiere den Server und installiere die linuxmuster.net File-Server-Pakete:
 
 .. code::
