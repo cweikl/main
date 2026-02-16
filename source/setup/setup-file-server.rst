@@ -227,6 +227,10 @@ Gib im Terminal zur Aktualisierung der Freigaben (Shares) folgende Befehle ein:
 .. hint::
 
    Hast Du für den File-Server einen anderen Schulnamen als den Vorgabewert (default-school) angegeben, dann must Du diesen hier angeben.
+   
+.. attention::
+
+   Nachstehenden Befehl musst Du nur eingeben, wenn Du eine neue Installation von linuxmuster.net zusammen mit dem Fileserver durchführst. Hast Du bereits eine lmn v7.3 installiert / eingerichtet und fügst erst später den Fileserver hinzu, dann musst Du folgenden Befehl weglassen: ``net conf addshare $SCHOOL /srv/samba/schools/$SCHOOL/``
 
 .. code::
 
