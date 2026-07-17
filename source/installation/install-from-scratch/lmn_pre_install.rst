@@ -245,9 +245,7 @@ Es werden alle erforderliche Pakete geladen und installiert. Dies kann etwas dau
   # Gateway   : 10.0.0.254
   # Interface : ens18
   # Swapsize  : 2G
-  # LVM device: /dev/sdb
-  # LVM vlms  : var:10,linbo:40,global:10,default-school:100%FREE
-  
+
   ### Finished - a reboot is necessary!
 
 Ist lmn-appliance ohne Fehler durchgelaufen, starte danach den Server neu mit dem Befehl: 
