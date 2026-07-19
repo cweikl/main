@@ -2,7 +2,7 @@
 .. _setup-label:
 
 =======================
-Setup v7.3 AD/DC Server
+Setup v7.4 AD/DC Server
 =======================
 
 .. sectionauthor:: `@cweikl <https://ask.linuxmuster.net/u/cweikl>`_,
