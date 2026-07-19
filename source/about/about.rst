@@ -198,7 +198,7 @@ Bestehende Firewall
 Es kann auch eine bestehende Firewall weiter genutzt und vollständig in linuxmuster.net integriert werden. Da diese Intergration von deren verwendeten Betriebssystem abhängt und unterschiedliche Schritte erfordert, können wir nicht eine datailierte Anleitung hier aufzeigen. Geben aber Hinweise dazu im Kapitel `Anpassbar`_. 
 
   
-Selbstheilende Arbeitsstationen durch LINBO 4.3
+Selbstheilende Arbeitsstationen durch LINBO 7.4
 +++++++++++++++++++++++++++++++++++++++++++++++
 
 .. image::    media/structure_of_version_7_client.svg

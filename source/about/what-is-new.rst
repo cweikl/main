@@ -2,13 +2,13 @@
 .. _`what-is-new-label`:
 
 ===================
-Was ist neu in 7.3?
+Was ist neu in 7.4?
 ===================
 
 .. sectionauthor:: `@cweikl <https://ask.linuxmuster.net/u/cweikl>`_,
                    `@MachtDochNix <https://ask.linuxmuster.net/u/machtdochnix>`_
 
-Linuxmuster.net 7.3 ist das Release-Update der linuxmuster.net v7.2. Es erfolgt eine Aktualisierung der bisher eingesetzten Ubuntu LTS Version auf die Ubuntu Server LTS Version 24.04. Die Kernpakete der linuxmuster.net Lösung erhalten alle ein Update und stellen viele Verbesserungen und neue Features bereit.
+Linuxmuster.net 7.4 ist das Release-Update der linuxmuster.net v7.3. Es erfolgt eine Aktualisierung der bisher eingesetzten Ubuntu LTS Version 24.04 auf die Ubuntu Server LTS Version 26.04. Die Kernpakete der linuxmuster.net Lösung erhalten alle ein Update und stellen viele Verbesserungen und neue Features bereit.
 
 Neue Funktionalitäten
 ---------------------
@@ -19,10 +19,10 @@ Verbesserte Skalierbarkeit
   * Moderne Bereitstellung zusätzlicher IT-Dienste der Schule innerhalb der Schullösung
 
 Moderne Betriebssystembasis und Steuerung
-  * Aktuelle Betriebssysteme für die Server (Ubuntu Server 24.04 LTS) 
-  * **Optionale** Firewall OPNsense |reg| ab v25.1
+  * Aktuelle Betriebssysteme für die Server (Ubuntu Server 26.04 LTS)
+  * **Optionale** Firewall OPNsense |reg| ab v26.1
   * Verbesserung der Performance des Samba-Dateiservers durch automatische Verlagerung der Shares auf eine zweite VM, die nur den Dateiserver aufnimmt. Nutzung von DFS als Dateisystem.
-  * Mit LINBO 4.3: aktuellste Linux-Kernels für aktuelle Hardware, differentielle Images, ntfs3 Kernel-Treiber, VNC-Server, mit neuem Namensschema zur einheitlichen Partitionierung
+  * Mit LINBO 7.6: aktuellste Linux-Kernels für aktuelle Hardware, differentielle Images, ntfs3 Kernel-Treiber, VNC-Server, mit neuem Namensschema zur einheitlichen Partitionierung
   * Webbasierte Steuerung der pädagogischen Funktionen mit einem **responsive design** (passt sich an alle Bildschirmgrößen und -auflösungen an).
   * WebUI mit vielen neuen administrativen Möglichkeiten wie die Verwaltung von Schulpersonal und Eltern
   * Bereitstellung von linuxmuster-tools, linuxmuster-api und linuxmuster-cli mit erweiterten Möglichkeiten zur Administration und Anbindung externer webbasierter Systeme

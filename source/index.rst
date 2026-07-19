@@ -2,7 +2,7 @@
 Einführung
 ==========
 
-Herzlich Willkommen zur Dokumentation von linuxmuster.net v7.3!
+Herzlich Willkommen zur Dokumentation von linuxmuster.net v7.4!
 
 Diese beschreibt alle wichtigen Schritte ...
 
@@ -32,7 +32,7 @@ Installation from Scratch
 -------------------------
 
 Diese Dokumentation führt Dich durch eine Installation von Grund auf. Dies bedeutet, dass zunächst 
-die Vorbereitung der Virtualisierungslösungen - hier Proxmox - dokumentiert wird. Auf dem Virtualisierer sind sog. Virtuelle Maschinen (VM) anzulegen, um linuxmuster.net 7.3 installieren zu können. Hierzu gehört die spezifische Einrichtung des Netzwerks, des Speichers sowie die Vorbereitung der VMs.
+die Vorbereitung der Virtualisierungslösungen - hier Proxmox - dokumentiert wird. Auf dem Virtualisierer sind sog. Virtuelle Maschinen (VM) anzulegen, um linuxmuster.net 7.4 installieren zu können. Hierzu gehört die spezifische Einrichtung des Netzwerks, des Speichers sowie die Vorbereitung der VMs.
 
 Weitere Hilfe
 -------------
@@ -46,7 +46,7 @@ Informationen zum Telefon-Support gibt es auf unser Projektseite `<https://www.l
 
 .. hint::
 
-   Suchst Du die Dokumentation zur Version linuxmuster.net 7.2 oder die Möglichkeit unsere Dokumentation herunterzuladen?
+   Suchst Du die Dokumentation zur Version linuxmuster.net 7.3 oder die Möglichkeit unsere Dokumentation herunterzuladen?
 
 Dann schaue in die unten recht angezeigte - zusätzliche - Menüleiste.
 
