@@ -340,7 +340,7 @@ Zum Abschluss der Installation wird automatisch versucht, Updates zu installiere
 
    Bei einer VM achte vor dem Neustart darauf, dass Du die ISO-Datei / DVD ausgeworfen hast und die Boot-Reihenfolge so umgestellt hast, dass die VM direkt von HDD bootet.
 
-Wenn die Installation abgeschlossen ist, erkennst Du daran, dass die Anzeige am unteren Bildschirmrand von
+Dass die Installation abgeschlossen ist, erkennst Du daran, dass die Anzeige am unteren Bildschirmrand von
 
 .. figure:: media/basis_server_022.png
    :align: center

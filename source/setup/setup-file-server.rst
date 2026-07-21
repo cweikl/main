@@ -10,9 +10,9 @@ Setup File-Server
               
 .. hint::
 
-    Der Fileserver für linuxmuster.net 7.3 kann optional installiert werden (Drei-Server-Lösung). Es kann aber weiterhin wie bisher auch ein Weiterbetrieb als Zwei-Server-Lösung erfolgen. Wir empfehlen den Fileserver z.B. in einer eigenen VM zu installieren, da hierdurch deutliche Performancesteigerungen in Verbindung mit Samba erreicht werden. Dies empfehlen wir insbesondere mittleren bis größeren Schulen. Kleinere Schulen können problemlos linuxmuster.net 7.3 als Zwei-Server-Lösung weiterbetreiben.
-    
-    Grundsätzlich kann linuxmuster.net 7.3 weiterhin als Zwei-Server-Lösung betrieben werden und es kann jederzeit später eine Erweiterung / Umstellung auf den zusätzlichen File-Server erfolgen. Die Migration/ das Update von v7.2 erfolgt zunächst immer als Zwei-Server-Lösung und es erfolgt danach eine Erweiterung um den Fileserver.                
+    Der Fileserver für linuxmuster.net 7.4 kann optional installiert werden (Drei-Server-Lösung). Es kann aber weiterhin wie bisher auch ein Weiterbetrieb als Zwei-Server-Lösung erfolgen. Wir empfehlen den Fileserver z.B. in einer eigenen VM zu installieren, da hierdurch deutliche Performancesteigerungen in Verbindung mit Samba erreicht werden. Dies empfehlen wir insbesondere mittleren bis größeren Schulen. Kleinere Schulen können problemlos linuxmuster.net 7.4 als Zwei-Server-Lösung weiterbetreiben.
+
+    Grundsätzlich kann linuxmuster.net 7.4 weiterhin als Zwei-Server-Lösung betrieben werden und es kann jederzeit später eine Erweiterung / Umstellung auf den zusätzlichen File-Server erfolgen. Die Migration/ das Update von v7.2 erfolgt zunächst immer als Zwei-Server-Lösung und es erfolgt danach eine Erweiterung um den Fileserver.                
 
 File-Server aufnehmen
 =====================
@@ -25,7 +25,7 @@ Melde Dich als Benutzer ``linuxadmin`` mit dem Passwort ``Muster!`` auf dem linu
 
 Für diese Anmeldung kannst Du die xterm.js Konsole von Proxmox verwenden, wenn Du unserer Anleitung gefolgt bist. Alternativ kannst Du Dich via ssh von einem anderen Rechner mit dem Server verbinden, wenn er sich im gleichen Netzwerksegment befindet.
 
-Im Terminal wirst Du mit dem Erstbildschirm von linuxmuster.net v7.3 begrüßt und es werden die installierten Paketversionen von linuxmuster.net angezeigt.
+Im Terminal wirst Du mit dem Erstbildschirm von linuxmuster.net v7.4 begrüßt und es werden die installierten Paketversionen von linuxmuster.net angezeigt.
 
 .. figure:: media/newsetup/lmn-setup-terminal-01.png
    :align: center
@@ -230,7 +230,7 @@ Gib im Terminal zur Aktualisierung der Freigaben (Shares) folgende Befehle ein:
    
 .. attention::
 
-   Nachstehenden Befehl musst Du nur eingeben, wenn Du eine neue Installation von linuxmuster.net zusammen mit dem Fileserver durchführst. Hast Du bereits eine lmn v7.3 installiert / eingerichtet und fügst erst später den Fileserver hinzu, dann musst Du folgenden Befehl weglassen: ``net conf addshare $SCHOOL /srv/samba/schools/$SCHOOL/``
+   Nachstehenden Befehl musst Du nur eingeben, wenn Du eine neue Installation von linuxmuster.net zusammen mit dem Fileserver durchführst. Hast Du bereits eine lmn v7.4 installiert / eingerichtet und fügst erst später den Fileserver hinzu, dann musst Du folgenden Befehl weglassen: ``net conf addshare $SCHOOL /srv/samba/schools/$SCHOOL/``
 
 .. code::
 

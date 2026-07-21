@@ -376,7 +376,7 @@ Trage das linuxmuster.net Repository in die Paketquellen des Clients ein:
 
 .. code::
 
-   sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/linuxmuster.net.gpg] https://deb.linuxmuster.net/ lmn73 main" > /etc/apt/sources.list.d/lmn73.list'
+   sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/linuxmuster.net.gpg] https://deb.linuxmuster.net/ lmn74 main" > /etc/apt/sources.list.d/lmn74.list'
 
 Aktualisiere die Paketinformationen mit ``sudo apt update``.
 

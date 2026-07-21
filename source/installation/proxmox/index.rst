@@ -30,7 +30,7 @@ Systemvoraussetzungen
 
 In der unten aufgeführten Tabelle findest Du die Systemvoraussetzungen zum Betrieb der virtuellen Maschinen. Die Systemanforderungen für die Installation von Proxmox selbst finden sich im Web unter https://www.proxmox.com/de/proxmox-ve/systemanforderungen. 
 
-Die Werte bilden die Mindestvoraussetzungen zur Planung. Für die Installation mit Proxmox und linuxmuster v7.3 wird als Standard der ``IP-Bereich 10.0.0.0/16`` genutzt.
+Die Werte bilden die Mindestvoraussetzungen zur Planung. Für die Installation mit Proxmox und linuxmuster v7.4 wird als Standard der ``IP-Bereich 10.0.0.0/16`` genutzt.
 
 ============ ============= ================= =====
 VM           IP            HDD               RAM 
@@ -666,7 +666,7 @@ Hier noch der Vollständigkeitshalber die schematische Darstellung, wie sie sich
 Vorbereiten des ISO-Speichers
 =============================
 
-Um die v7.3 zu installieren, müssen zwei virtuelle Maschinen angelegt werden. OPNsense und Ubuntu Server LTS werden in diesen VMs installiert. Dazu ist es erforderlich, dass Du die ISO-Images für OPNsense und Ubuntu Server LTS auf den Proxmox-Hypervisor in den Datenspeicher für ISO-Images lädst.
+Um die v7.4 zu installieren, müssen zwei virtuelle Maschinen angelegt werden. OPNsense und Ubuntu Server LTS werden in diesen VMs installiert. Dazu ist es erforderlich, dass Du die ISO-Images für OPNsense und Ubuntu Server LTS auf den Proxmox-Hypervisor in den Datenspeicher für ISO-Images lädst.
 
 .. figure:: media/proxmox-download-iso_01.png
    :align: center
@@ -1006,7 +1006,7 @@ Klicke auf ``Add``.
 Anlegen der VM für linuxmuster server
 -------------------------------------
 
-Um für den linuxmuster.net Server v7.3 die VM anzulegen, wählst Du erneut in der Proxmox - Verwaltungsoberfläche den Button ``Create VM``.
+Um für den linuxmuster.net Server v7.4 die VM anzulegen, wählst Du erneut in der Proxmox - Verwaltungsoberfläche den Button ``Create VM``.
 
 .. figure:: media/proxmox-create-vm.png
    :align: center
@@ -1249,4 +1249,4 @@ Die beiden letzten Einstellungen musst Du **nochmals für den linuxmuster.net AD
 
 Die virtuellen Maschinen sind jetzt für die weitere Installation vorbereitet. Du kannst gemäß der Anleitung: :ref:`first_start_firewall` mit der Installation fortfahren.
 
-.. hint:: Jetzt wäre auch ein guter Zeitpunkt für ein Snapshoting und/oder dem Klonen der bisher erstellten VMs. 
+.. hint:: Jetzt wäre auch ein guter Zeitpunkt für einen Snapshot und/oder das Klonen der bisher erstellten VMs. 

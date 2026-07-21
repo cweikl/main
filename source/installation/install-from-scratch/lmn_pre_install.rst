@@ -3,7 +3,7 @@
 .. _lmn_pre_install-label:
 
 =====================================
-Server (AD/DC) auf lmn7.3 vorbereiten
+Server (AD/DC) auf lmn7.4 vorbereiten
 =====================================
 
 .. sectionauthor:: `@cweikl <https://ask.linuxmuster.net/u/cweikl>`_
@@ -181,7 +181,7 @@ Wenn Du nicht mehr an Deinem Server eingeloggt bist, melde Dich erneut an.
    sr0     11:0    1 1024M  0 rom  
 
 In o.g. Beispiel wurde Ubuntu Server auf der 1. Festplatte (sda) installiert. Die erste Partition der ersten Platte wird für EFI verwendet,
-auf der zweiten Partition wird die Root-Partition ( / ) eingehangen. Auf der zweiten Platte existiert eine Partition, die auf /srv eingehangen ist.
+auf der zweiten Partition wird die Root-Partition ( / ) eingehängt. Auf der zweiten Platte existiert eine Partition, die auf /srv eingehängt ist.
 
 Skript herunterladen
 --------------------
@@ -254,7 +254,7 @@ Ist lmn-appliance ohne Fehler durchgelaufen, starte danach den Server neu mit de
 
   reboot
 
-Danach steht dem Setup v7.3 nichts mehr im Wege.
+Danach steht dem Setup v7.4 nichts mehr im Wege.
 
 Paketquellen eintragen
 ======================
@@ -263,7 +263,7 @@ Paketquellen eintragen
 
    Dies muss nur ausgeführt werden, sofern Du den Server bzw. die VM nicht mit dem Skript ``lmn-appliance`` vorbereitet haben solltest.
 
-Es müssen für linuxmuster.net v7.3 die neuen Paketquellen eingetragen werden.
+Es müssen für linuxmuster.net v7.4 die neuen Paketquellen eingetragen werden.
 
 Zur Eintragung der Paketquellen führe folgende Befehle in der Eingabekonsole aus:
 
@@ -275,11 +275,11 @@ Zur Eintragung der Paketquellen führe folgende Befehle in der Eingabekonsole au
 
 Damit installierst Du den Key für das Repository von linuxmuster.net und aktivierst ihn.
 
-Füge dann das Linuxmuster 7.3 Repository hinzu.
+Füge dann das Linuxmuster 7.4 Repository hinzu.
 
 .. code-block:: Bash
 
-   sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/linuxmuster.net.gpg] https://deb.linuxmuster.net/ lmn73 main" > /etc/apt/sources.list.d/lmn.list'
+   sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/linuxmuster.net.gpg] https://deb.linuxmuster.net/ lmn74 main" > /etc/apt/sources.list.d/lmn.list'
 
 Aktualisiere die Softwareliste des Servers:
 
