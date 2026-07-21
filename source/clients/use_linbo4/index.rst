@@ -1027,7 +1027,7 @@ Auf dem Server befindet sich unter ``/etc/linuxmuster/linbo/custom_kernel.ex`` e
 
 Kopiere die Datei Vorlage ``/etc/linuxmuster/linbo/custom_kernel.ex`` nach ``/etc/linuxmuster/linbo/custom_kernel``. Editiere diese Datei nun so, dass der gewünschte Kernel auf dem Client gebootet wird. Sind in der Datei alle Zeilen auskommentiert, dann startet der Client einen letzten stable Kernel.
 
-- Es kann alternativ der **5.15er Kernel (legacy)** genutzt werden. Dazu müssen einfach in der Datei ``/etc/linuxmuster/linbo/custom_kernel`` die folgenden Zeilen eingetragen werden. Es ist nur das Kommentarzeichen für die zweite Zeile zu entfernen.
+- Es kann alternativ der **6.1er Kernel (legacy)** genutzt werden. Dazu müssen einfach in der Datei ``/etc/linuxmuster/linbo/custom_kernel`` die folgenden Zeilen eingetragen werden. Es ist nur das Kommentarzeichen für die zweite Zeile zu entfernen.
 
 .. code::
 
@@ -1132,7 +1132,7 @@ Kernel-Options verwenden
 ------------------------
 
 Auf dem Server findet sich pro Hardwareklasse eine start.conf Datei unter: ``/srv/linbo/start.conf.<Hardwareklasse>``
-Um Besonderheiten einzelner Hardwareklassen anzupassen, gibt es den Eintrag **KernelOptions_**. 
+Um Besonderheiten einzelner Hardwareklassen anzupassen, gibt es den Eintrag **KernelOptions**.
 
 .. code::
      

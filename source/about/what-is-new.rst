@@ -22,7 +22,7 @@ Moderne Betriebssystembasis und Steuerung
   * Aktuelle Betriebssysteme für die Server (Ubuntu Server 26.04 LTS)
   * **Optionale** Firewall OPNsense |reg| ab v26.1
   * Verbesserung der Performance des Samba-Dateiservers durch automatische Verlagerung der Shares auf eine zweite VM, die nur den Dateiserver aufnimmt. Nutzung von DFS als Dateisystem.
-  * Mit LINBO 7.6: aktuellste Linux-Kernels für aktuelle Hardware, differentielle Images, ntfs3 Kernel-Treiber, VNC-Server, mit neuem Namensschema zur einheitlichen Partitionierung
+  * Mit LINBO 7.4: aktuellste Linux-Kernels für aktuelle Hardware, differentielle Images, ntfs3 Kernel-Treiber, VNC-Server, mit neuem Namensschema zur einheitlichen Partitionierung
   * Webbasierte Steuerung der pädagogischen Funktionen mit einem **responsive design** (passt sich an alle Bildschirmgrößen und -auflösungen an).
   * WebUI mit vielen neuen administrativen Möglichkeiten wie die Verwaltung von Schulpersonal und Eltern
   * Bereitstellung von linuxmuster-tools, linuxmuster-api und linuxmuster-cli mit erweiterten Möglichkeiten zur Administration und Anbindung externer webbasierter Systeme
