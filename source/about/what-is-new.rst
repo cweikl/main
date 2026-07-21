@@ -58,7 +58,7 @@ Selbstheilende Arbeitsstationen
   * Weitere Neuerungen in LINBO sind u.a.:
 
     * Aktuelle Linux-Kernel ab 6.12.* und einem nativen NTFS-Kernel Treiber
-    * Neues einheitliches Partitionsschema mit neuem Namenschemata
+    * Neues einheitliches Partitionsschema mit neuem Namensschema
     * Konsolidierung der Start-Parameter
     * VNC-Server auf den Clients für Remote-Zugriff
     * Inventarisierung der Clients mit hwinfo

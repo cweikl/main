@@ -10,7 +10,7 @@ Setup File-Server
               
 .. hint::
 
-    Der Fileserver für inuxmuster.net 7.3 kann optional installiert werden (Drei-Server-Lösung). Es kann aber weiterhin wie bisher auch ein Weiterbetrieb als Zwei-Server-Lösung erfolgen. Wir empfehlen den Fileserver z.B. in einer eigenen VM zu installieren, da hierdurch deutliche Performancesteigerungen in Verbidnung mit Samba erreicht werden. Dies empfehlen wir insbesondere mittleren bis grösseren Schulen. Kleinere Schulen können problemlos linuxmuster.net 7.3 als Zwei-Server-Lösung weiterbetreiben.
+    Der Fileserver für linuxmuster.net 7.3 kann optional installiert werden (Drei-Server-Lösung). Es kann aber weiterhin wie bisher auch ein Weiterbetrieb als Zwei-Server-Lösung erfolgen. Wir empfehlen den Fileserver z.B. in einer eigenen VM zu installieren, da hierdurch deutliche Performancesteigerungen in Verbindung mit Samba erreicht werden. Dies empfehlen wir insbesondere mittleren bis größeren Schulen. Kleinere Schulen können problemlos linuxmuster.net 7.3 als Zwei-Server-Lösung weiterbetreiben.
     
     Grundsätzlich kann linuxmuster.net 7.3 weiterhin als Zwei-Server-Lösung betrieben werden und es kann jederzeit später eine Erweiterung / Umstellung auf den zusätzlichen File-Server erfolgen. Die Migration/ das Update von v7.2 erfolgt zunächst immer als Zwei-Server-Lösung und es erfolgt danach eine Erweiterung um den Fileserver.                
 
@@ -138,7 +138,7 @@ d) Schulname: wird -s ausgelassen, wird default-school genutzt
 
 .. hint::
 
-   Hast Du zuvor das Setup des linuxmuster.net AD/DC Server durchlaufen, dann nutzt Du dort den Share default-school - unabhängig davon, wie Du beim Setup Deine Schule genannt hast. Du must also für den File-Server daher diese angeben bzw. den Parameter -s weglassen.
+   Hast Du zuvor das Setup des linuxmuster.net AD/DC Server durchlaufen, dann nutzt Du dort den Share default-school - unabhängig davon, wie Du beim Setup Deine Schule genannt hast. Du musst also für den File-Server daher diese angeben bzw. den Parameter -s weglassen.
 
 .. code::
 
@@ -151,7 +151,7 @@ Wurde das Setup erfolgreich ausgeführt, siehst Du folgende Bestätigung:
    :alt: successful setup
    :width: 40%
    
-   File-Server: Erolgreiches Setup
+   File-Server: Erfolgreiches Setup
    
 Auf dem File-Server findet sich nun das Verzeichnis:
 
@@ -226,7 +226,7 @@ Gib im Terminal zur Aktualisierung der Freigaben (Shares) folgende Befehle ein:
 
 .. hint::
 
-   Hast Du für den File-Server einen anderen Schulnamen als den Vorgabewert (default-school) angegeben, dann must Du diesen hier angeben.
+   Hast Du für den File-Server einen anderen Schulnamen als den Vorgabewert (default-school) angegeben, dann musst Du diesen hier angeben.
    
 .. attention::
 

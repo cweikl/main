@@ -1106,7 +1106,7 @@ Gibt dmesg folgenden Fehler aus:
    i915 0000:00:02.0: [drm] Failed to load DMC firmware i915/kbl_dmc_ver1_04.bin. Disabling runtime power management.
    i915 0000:00:02.0: [drm] DMC firmware homepage: https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/i915
 
-Dann passe die Datei wir folgt an:
+Dann passe die Datei wie folgt an:
 
 .. code::
 
@@ -1125,7 +1125,7 @@ Führe anschließend den Befehl ``update-linbofs`` auf dem linuxmuster Server au
 
 .. hint::
 
-   Sollte ein geladener Wifi Treiber dazu führen, dass die Wifi NIC nicht nach einem LINBO Reboot funktioniert, dann nutze die Kerneloption ``nowarmstart``.
+   Sollte ein geladener Wifi-Treiber dazu führen, dass die Wifi-NIC nicht nach einem LINBO Reboot funktioniert, dann nutze die Kerneloption ``nowarmstart``.
 
 
 Kernel-Options verwenden
@@ -1143,7 +1143,7 @@ Um Besonderheiten einzelner Hardwareklassen anzupassen, gibt es den Eintrag **Ke
      # Modul realtek r8168 laden, aber den Aufruf des Moduls realtek r8169 unterbinden
      KernelOptions = loadmodules=r8168 modprobe.blacklist=r8169
      
-     # lade noche keine Grafikkarten-Treiber, bis das System gestartet wurde und lade diese erst danach. 
+     # lade noch keine Grafikkarten-Treiber, bis das System gestartet wurde und lade diese erst danach.
      KernelOptions = nomodeset
      
      # linbo soll nach dem herunterladen eines neuen LINBO-Kernels keinen Warmstart ausführen  
@@ -1204,11 +1204,11 @@ Dies kann auf dem PC wie folgt in der Linux-Konsole definiert werden:
 
    ssh -L 9999:<Client-IP>:9999 root@<Server-IP>
    
-Der Server fordert zur Eingabe des Kennwortes für den Benutzer root auf. Wurde dies erfolgreich ausgeführt, so ist die Konsole es Server zu sehen.
+Der Server fordert zur Eingabe des Kennwortes für den Benutzer root auf. Wurde dies erfolgreich ausgeführt, so ist die Konsole des Servers zu sehen.
 
 Auf dem Client kann nach dem LINBO-Bootvorgang in der LINBO-Konsole kontrolliert werden, ob der VNCServer gestartet wurde. Wähle in LINBO dazu rechts das Werkzeug aus und wähle den Eintrag LINBO-Konsole aus.
 
-Gib hier den Befehl ``ps`` ein und Du erhälst die Ausgabe der derzeit unter LINBO auf dem Client laufende Prozesse.
+Gib hier den Befehl ``ps`` ein und Du erhältst die Ausgabe der derzeit unter LINBO auf dem Client laufende Prozesse.
 
 Dies kann z.B. wie folgt aussehen:
 
@@ -1251,7 +1251,7 @@ Mit LINBO >= v4.3 ist es möglich via LINBO ein Live-System wie z.B. Ubuntu 24.0
 
 Um im Fehlerfall auf bestimmten Clients diesen auch mithilfe eines Live-System zu booten, kann z.B. für eine Hardwareklasse ein zusätzlicher Boot-Eintrag bereitgestellt werden, der auf eine ISO-Datei verweist.
 
-Hierdurch kannst Du via LINBO auf dem Client das Live-System vom Server aus starten und so die Fehler auf dem Client anaylsieren, oder auch einfach nur das Live-System auf dem Client testen.
+Hierdurch kannst Du via LINBO auf dem Client das Live-System vom Server aus starten und so die Fehler auf dem Client analysieren, oder auch einfach nur das Live-System auf dem Client testen.
 
 Vorgehen
 --------
@@ -1273,7 +1273,7 @@ Pro ISO-Datei ist  unterhalb des o.g. Verzeichnisses ein gleichnamiges Unterverz
 
 **Beispiel**:
 
-Sollen die ISO-Dateien ``ubuntu-24.04.2-desktop-amd64.iso`` und ``systemrescue-12.01-amd64.iso`` bereitgestellt werden, so sind zunächst folge unterverzeichnisse anzulegen:
+Sollen die ISO-Dateien ``ubuntu-24.04.2-desktop-amd64.iso`` und ``systemrescue-12.01-amd64.iso`` bereitgestellt werden, so sind zunächst folgende Unterverzeichnisse anzulegen:
 
 .. code::
 
@@ -1301,7 +1301,7 @@ Dies erfolgt bezogen auf o.g. Beispiel mit nachstehenden Befehlen:
    linbo-torrent create /srv/linbo/images/ubuntu-24.04.2-desktop-amd64/ubuntu-24.04.2-desktop-amd64.iso
    linbo-torrent create /srv/linbo/images/systemrescue-12.01-amd64/systemrescue-12.01-amd64.iso
    
-Es finden sich in in dem jeweiligen Unterverzeichnis dann drei Dateien (z.B.):
+Es finden sich in dem jeweiligen Unterverzeichnis dann drei Dateien (z.B.):
 
 .. code::
 
@@ -1312,7 +1312,7 @@ Es finden sich in in dem jeweiligen Unterverzeichnis dann drei Dateien (z.B.):
 Pfade für Kernel und Initrd ermitteln
 -------------------------------------
 
-In der Hardwareklasse sind später die Pfade für Kernel und Initd anzugeben, wie diese in der ISO-Datei gültig sind. Daher sind in den ISO-Dateien zunächst deren Pfade zu ermitteln.
+In der Hardwareklasse sind später die Pfade für Kernel und Initrd anzugeben, wie diese in der ISO-Datei gültig sind. Daher sind in den ISO-Dateien zunächst deren Pfade zu ermitteln.
 
 1. Mounte die ISO-Datei auf dem PC
 2. Suche für den Kernel nach der Datei ``vmlinuz``. Notiere Dir den Pfad.
@@ -1326,7 +1326,7 @@ Für systemrescue-12.01-amd64.iso liegt die Datei ``vmlinuz`` im Verzeichnis ``s
 Kernel-Append-Parameter ermitteln
 ---------------------------------
 
-Für die ISO-Dateien musst Du noch ermitteln, welche Kernel-Parameter angefügt werden können2, die dann in der Hardwareklasse für die start.conf angegeben werden können.
+Für die ISO-Dateien musst Du noch ermitteln, welche Kernel-Parameter angefügt werden können, die dann in der Hardwareklasse für die start.conf angegeben werden können.
 
 1. Öffne die gemountete ISO-Datei auf dem PC.
 2. Suche die Dateien ``boot/grub/grub.cfg`` oder ``isolinux.cfg``. Die Parameter splash, quiet, findiso und iso-scan können weggelassen werden, da sie automatisch erzeugt werden.
@@ -1364,7 +1364,7 @@ Abschließend musst Du in der Konsole auf dem Server den Befehl ``linuxmuster-im
 Live-CD starten
 ---------------
 
-Starte nun den Client via LINBO. Im Startmenü von LINBO findest Du nun den zur angelegten Eintrag zur Live-CD. Starte diese nun durch einen Klick auf das grosse Symbol für das Betriebssystem.
+Starte nun den Client via LINBO. Im Startmenü von LINBO findest Du nun den angelegten Eintrag zur Live-CD. Starte diese nun durch einen Klick auf das große Symbol für das Betriebssystem.
 
 
 im Fehlerfall
@@ -1377,7 +1377,7 @@ Nutzt Du sehr große Images, so kann es passieren, dass bei der Verteilung der q
 
 Ab LINBO v4.1.36 können für ``ctorrent`` Parameter angepasst werden, um dies zu verhindern.
 
-Die Konfigurationsdati für ctorrent befindet sich 
+Die Konfigurationsdatei für ctorrent befindet sich
 
 .. code::
 
@@ -1388,9 +1388,9 @@ Die Paketgrößen können nun als Parameter ``piece length`` angepasst werden. D
 .. code::
 
    # Piece length (torrent file option)
-   ECELEN="524288"
+   PIECELEN="524288"
    
-Hast Du den Wert angepasst, musst Du Torrent neu startebn:
+Hast Du den Wert angepasst, musst Du Torrent neu starten:
 
 .. code::
 
@@ -1400,7 +1400,7 @@ Wurde die Option in der Konfigurationsdatei nicht explizit gesetzt, so wird ein 
 
 Mit der Erhöhung des Wertes können o.g. Probleme behoben werden.
 
-Zum Vergleich findet sich nachstehende Konfigurationsdatei ``/etc/default/linbi-torrent``:
+Zum Vergleich findet sich nachstehende Konfigurationsdatei ``/etc/default/linbo-torrent``:
 
 .. code::
 

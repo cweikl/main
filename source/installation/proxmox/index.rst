@@ -85,7 +85,7 @@ Lade Dir dort das aktuellste Image herunter und erstelle Dir einen bootfähigen 
 Erstellen eines USB-Sticks zur Installation des Proxmox-Host
 ------------------------------------------------------------
 
-Nachdem Du die ISO-Datei für Proxmox heruntergeladen hast, wechselst Du in das Download-Verzeichnis. Danach ermittel Du den korrekten Buchstaben für den USB-Stick unter Linux. Das X bei sdX ist durch den korrekten Buchstaben für den USB-Stick zu ersetzen (z.B. /dev/sda). Nachstehender Befehl als Benutzer *root* oder mit einem *sudo* vorangestellt einzugeben:
+Nachdem Du die ISO-Datei für Proxmox heruntergeladen hast, wechselst Du in das Download-Verzeichnis. Danach ermittelst Du den korrekten Buchstaben für den USB-Stick unter Linux. Das X bei sdX ist durch den korrekten Buchstaben für den USB-Stick zu ersetzen (z.B. /dev/sda). Nachstehender Befehl ist als Benutzer *root* oder mit einem vorangestellten *sudo* einzugeben:
 
 .. code-block:: console
 
@@ -109,7 +109,7 @@ Um zu Beginn den Proxmox-Host zu administrieren, ist ein Laptop/PC mit dem Switc
    Aufbau des Netzwerkes zur Proxmox Installation
 
 
-Es werden zunächst alle Aktualisierungen durchgeführt und die benötigten ISO-Images auf den Proxmox-Host heruntergeladen. Erst danach wird die Konfiguration des Proxmox-Host so geändert wird, dass dieser nur noch im grünen Netz erreichbar ist.
+Es werden zunächst alle Aktualisierungen durchgeführt und die benötigten ISO-Images auf den Proxmox-Host heruntergeladen. Erst danach wird die Konfiguration des Proxmox-Host so geändert, dass dieser nur noch im grünen Netz erreichbar ist.
 
 
 Installieren von Proxmox
@@ -183,7 +183,7 @@ Hier wurde die interne IP-Adresse `192.168.199.20/24` festgelegt.
    :scale: 60%
    :alt: Proxmox Installation Netzwerk Konfiguration
 
-   Netwerk Konfiguration
+   Netzwerk Konfiguration
 
 Überprüfe auf der Übersichtsseite, dass alle Angaben korrekt sind und fahre anschließend fort.
 
@@ -192,7 +192,7 @@ Hier wurde die interne IP-Adresse `192.168.199.20/24` festgelegt.
    :scale: 40%
    :alt: Proxmox Installation Übersicht
 
-   Zusamenfassung der Installationsoptionen
+   Zusammenfassung der Installationsoptionen
 
 Warte den Abschluss der Installation ab.
 
@@ -252,9 +252,9 @@ Kommentiere zuerst die Paketquellen für die Enterprise-Pakete aus, die nach der
 
 .. hint:
 
-   Falls Du die beiden Befehl via copy&paste übernimmst, prüfe, ob in der Eingabekonsole die Hochkommata erhalten bleiben.
+   Falls Du die beiden Befehle via copy&paste übernimmst, prüfe, ob in der Eingabekonsole die Hochkommata erhalten bleiben.
 
-Füge dann für Proxmox VE eine neu Paketquelle für die No-Subscription-Pakete hinzu.
+Füge dann für Proxmox VE eine neue Paketquelle für die No-Subscription-Pakete hinzu.
 
 .. code::
 
@@ -666,7 +666,7 @@ Hier noch der Vollständigkeitshalber die schematische Darstellung, wie sie sich
 Vorbereiten des ISO-Speichers
 =============================
 
-Um die v7.3 zu installieren, müssen zwei virtuelle Maschinen angelegt werden. OPNsense und Ubuntu Server LTS werden in diesei VMs installiert. Dazu ist es erforderlich, dass Du die ISO-Images für OPNsense und Ubuntu Server LTS auf den Proxmox-Hypervisor in den Datenspeicher für ISO-Images lädst.
+Um die v7.3 zu installieren, müssen zwei virtuelle Maschinen angelegt werden. OPNsense und Ubuntu Server LTS werden in diesen VMs installiert. Dazu ist es erforderlich, dass Du die ISO-Images für OPNsense und Ubuntu Server LTS auf den Proxmox-Hypervisor in den Datenspeicher für ISO-Images lädst.
 
 .. figure:: media/proxmox-download-iso_01.png
    :align: center
@@ -682,7 +682,7 @@ Ubuntu Server
 
 .. hint:: 
 
-   Beachte für den Download des Ubuntu Servers, dass du immer die Version verwendest, die in den Systemvoraussetzungen genannt wurde.
+   Beachte für den Download des Ubuntu Servers, dass Du immer die Version verwendest, die in den Systemvoraussetzungen genannt wurde.
 
    Bei den Bildern wird ggf. noch eine abweichende Version gezeigt. Diese ist unbedingt anzupassen.
 
@@ -1040,7 +1040,7 @@ Klicke dann auf ``Next``.
 
 Belasse hier zunächst alle Voreinstellungen für Grafikkarte und Festplatten-Controller wie angezeigt.
 Wähle als BIOS ``OVMF (UEFI)`` und füge einen EFI-Storage hinzu. Wähle hier im Drop-down den zuvor eingerichteten Proxmox-Speicher aus.
-Aktiviere den ``Qmu Agent``.
+Aktiviere den ``Qemu Agent``.
 
 .. figure:: media/proxmox-create-vm-ubuntu-server-03.png
    :align: center
@@ -1249,4 +1249,4 @@ Die beiden letzten Einstellungen musst Du **nochmals für den linuxmuster.net AD
 
 Die virtuellen Maschinen sind jetzt für die weitere Installation vorbereitet. Du kannst gemäß der Anleitung: :ref:`first_start_firewall` mit der Installation fortfahren.
 
-.. hint:: Jetzt wäre auch ein guter Zeitpunkt für ein Snapshoting und/oder dem Klonen der bisher erstellen VMs. 
+.. hint:: Jetzt wäre auch ein guter Zeitpunkt für ein Snapshoting und/oder dem Klonen der bisher erstellten VMs. 
