@@ -6,7 +6,7 @@
  Migration auf linuxmuster 7.4
 ===============================
 
-.. sectionauthor:: `@cweikl <https://ask.linuxmuster,net/u/cweikl>`_ 
+.. sectionauthor:: `@cweikl <https://ask.linuxmuster.net/u/cweikl>`_
 
 
 Um auf die linuxmuster 7.4 zu migrieren:

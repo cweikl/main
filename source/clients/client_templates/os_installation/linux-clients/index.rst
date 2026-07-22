@@ -69,7 +69,7 @@ Installation Ubuntu
 .. hint::
    Bei Ubuntu sollte man darauf achten, dass der Firefox nicht als Snap-Paket installiert wird, da damit SSO nicht funktioniert! Möglicherweise trifft das auch auf andere Distributionen zu!
    
-Hast Du den PC / die VM von vom ISO-Image / der Installations-DVD gestartet, siehst Du zunächst folgenden Start-Bildschirm:
+Hast Du den PC / die VM vom ISO-Image / der Installations-DVD gestartet, siehst Du zunächst folgenden Start-Bildschirm:
 
 .. figure:: media/00-linux-client-ubu-grub-start.png
    :align: center
@@ -184,11 +184,11 @@ Klicke auf ``ok`` und es werden nochmals alle Einstellungen angezeigt:
    
    Übersicht der Partitionen
 
-Sind diese Einstellungen korrekt, prüfe noch, ob das Gerät für die Bootloader-Installation die Ubuntu-Parition ist bzw. bei UEFI-Geräte EFI-Partition (z.B. /dev/vda1 hier mit dem Einhängepunkt /boot/efi). Falls nicht passe dies an. Der Bootloader sollte **nicht** auf den MBR der Festplatte installiert werden.
+Sind diese Einstellungen korrekt, prüfe noch, ob das Gerät für die Bootloader-Installation die Ubuntu-Parition ist bzw. bei UEFI-Geräten EFI-Partition (z.B. /dev/vda1 hier mit dem Einhängepunkt /boot/efi). Falls nicht passe dies an. Der Bootloader sollte **nicht** auf den MBR der Festplatte installiert werden.
 
 Setze die Installation mit dem Button ``weiter`` fort.
 
-Im weiteren INstallationsverlauf wirst Du nach dem Namen für den Computer und dem Benutzernamen und Kennwort für den neuen Administrator gefragt. Gib hier als Benutzernamen ``linuxadmin`` ein. Beim Namen des Rechners musst Du den Namen des PCs / der VM angeben, wie Du ihn in der Gerätekonfiguration festgelegt hast.
+Im weiteren Installationsverlauf wirst Du nach dem Namen für den Computer und dem Benutzernamen und Kennwort für den neuen Administrator gefragt. Gib hier als Benutzernamen ``linuxadmin`` ein. Beim Namen des Rechners musst Du den Namen des PCs / der VM angeben, wie Du ihn in der Gerätekonfiguration festgelegt hast.
 
 .. figure:: media/05-linux-client-ubu-install.png
    :align: center
@@ -217,7 +217,7 @@ Vor der eigentlichen Installation werden Dir die Einstellungen nochmals als Übe
 
 Entsprechen die angezeigten Einstellungen den von Dir gewünschten Einstellungen, dann starte die Installation mit dem Button ``Installieren``.
 
-Während der Installation wir Dir der Status des Vorgangs dargestellt.
+Während der Installation wird Dir der Status des Vorgangs dargestellt.
 
 .. figure:: media/05-linux-client-ubu-installation-status.png
    :align: center
@@ -256,7 +256,7 @@ Klicke nun unten rechts auf das Werkzeug-Symbol, um zum Menü für die Imageerst
    :align: center
    :alt: Ubuntu Installation: Menue Tools
    
-   Wekzeug-Symbol
+   Werkzeug-Symbol
 
 Du wirst nach dem Linbo-Passwort gefragt. Gib dieses ein. 
 
@@ -324,7 +324,7 @@ Zum Abschluss erscheint die Meldung, dass das Image erfolgreich hochgeladen wurd
 
 Gehe durch einen Klick auf das Zeichen ``<`` zurück und klicke im nächsten Bildschirm das obere Symbol auf der rechten Seite an, um Dich abzumelden.
 
-Du siehst nun drei Start-Symbole. Das grosse Symbol started das Image sychronisiert, während das grüne Icon das lokale Image aus dem Cache ohne Synchronisation startet.
+Du siehst nun drei Start-Symbole. Das große Symbol startet das Image synchronisiert, während das grüne Icon das lokale Image aus dem Cache ohne Synchronisation startet.
 
 .. figure:: media/06-linux-client-ubu-install.png
    :align: center
@@ -376,7 +376,7 @@ Trage das linuxmuster.net Repository in die Paketquellen des Clients ein:
 
 .. code::
 
-   sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/linuxmuster.net.gpg] https://deb.linuxmuster.net/ lmn73 main" > /etc/apt/sources.list.d/lmn73.list'
+   sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/linuxmuster.net.gpg] https://deb.linuxmuster.net/ lmn74 main" > /etc/apt/sources.list.d/lmn74.list'
 
 Aktualisiere die Paketinformationen mit ``sudo apt update``.
 

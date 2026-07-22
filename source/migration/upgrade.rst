@@ -51,7 +51,7 @@ Rufe das Skript wie folgt auf:
 
    Falls Du Dich via SSH auf dem Server anmeldest, stelle sicher, dass Du als user ``root`` eine tmux-Session startest, damit das Upgrade nicht die SSH-Verbindung unterbricht.
 
-Das Upgrade dauert eine ganze Zeit. Du erhälst zu Beginn auf der Konsole den Hinweis, dass Du vor dem Upgrade einen Snapshot Deiner VM anlegen solltest. Zum Start des Upgrades musst Du dann den in der Konsole angezeigten Text eingeben und dies mit ENTER bestätigen. Danach startet das Upgrade.
+Das Upgrade dauert eine ganze Zeit. Du erhältst zu Beginn auf der Konsole den Hinweis, dass Du vor dem Upgrade einen Snapshot Deiner VM anlegen solltest. Zum Start des Upgrades musst Du dann den in der Konsole angezeigten Text eingeben und dies mit ENTER bestätigen. Danach startet das Upgrade.
 
 Prüfe während des Upgrades, ob Fehler ausgegeben werden. Im Nachgang kannst Du zudem in der mitgeschriebenen Log-Datei ggf. nach Fehlern suchen.
 

@@ -14,7 +14,7 @@ Anlegen und Installieren des Servers (AD/DC)
 
 .. hint::
 
-   Willst Du in einer VM installieren, so must Du für die neue VM folgende Mindesteinstellungen angeben:
+   Willst Du in einer VM installieren, so musst Du für die neue VM folgende Mindesteinstellungen angeben:
      
      - Installation von Local/ISO, 
      - Gast OS: Linux, 6.X - 2.6 Kernel
@@ -27,7 +27,7 @@ Anlegen und Installieren des Servers (AD/DC)
    Achte darauf, dass vor dem Start der VM beide Festplatten der VM zugewiesen wurden.
 
    Bei der Einrichtung des Servers musst Du nur einen Server mit 2 HDDs haben und Ubuntu auf der ersten HDD installieren.
-   Die zweite HDD bleibt wird später für linuxmuster.net genutzt.
+   Die zweite HDD wird später für linuxmuster.net genutzt.
 
 Erster Start des Servers vom Installationsmedium
 ================================================
@@ -325,7 +325,7 @@ Installiere keine weiteren optionalen Pakete.
 
 Bestätige den Start des Installationsvorganges mit ``Erledigt``.
 
-Zum Abschluß der Installation wird automatisch versucht, Updates zu installieren |...|
+Zum Abschluss der Installation wird automatisch versucht, Updates zu installieren |...|
 
 .. figure:: media/basis_server_020.png
    :align: center
@@ -340,7 +340,7 @@ Zum Abschluß der Installation wird automatisch versucht, Updates zu installiere
 
    Bei einer VM achte vor dem Neustart darauf, dass Du die ISO-Datei / DVD ausgeworfen hast und die Boot-Reihenfolge so umgestellt hast, dass die VM direkt von HDD bootet.
 
-Wann die Installation abgeschlossen ist, erkennst Du daran, dass die Anzeige am unteren Bildschirmrand von
+Dass die Installation abgeschlossen ist, erkennst Du daran, dass die Anzeige am unteren Bildschirmrand von
 
 .. figure:: media/basis_server_022.png
    :align: center
@@ -356,7 +356,7 @@ auf
    :scale: 80%
    :alt: finished updates
 
-   ... abgeschlosse
+   ... abgeschlossen
 
 gewechselt ist.
 
@@ -513,7 +513,7 @@ Sollte die Namensauflösung Probleme bereiten, prüfe die Datei /etc/resolv.conf
 
    less /etc/resolv.conf
    
-Sollte als nameserver nur 127.0.0.53 angegeben sein, must Du diese IP durch 10.0.0.254 ersetzen.
+Sollte als nameserver nur 127.0.0.53 angegeben sein, musst Du diese IP durch 10.0.0.254 ersetzen.
 
 Test der Verbindung zur Firewall
 --------------------------------

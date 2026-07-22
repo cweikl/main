@@ -41,12 +41,12 @@ Neben dieser Dokumentation steht Dir unsere Community in unserem Hilfeforum und 
 
 Das Forum findest Du unter `<https://ask.linuxmuster.net>`_.
 
-Informationen zum Telefon-Support gibt es auf unser Projektseite `<https://www.linuxmuster.net/de/support-de/>`_.
+Informationen zum Telefon-Support gibt es auf unserer Projektseite `<https://www.linuxmuster.net/de/support-de/>`_.
 
 
 .. hint::
 
-   Suchst Du die Dokumentation zur Version linuxmuster.net 7.3 oder die Möglichkeit unsere Dokumentation herunterzuladen?
+   Suchst Du die Dokumentation zur Version linuxmuster.net 7.3 oder die Möglichkeit, unsere Dokumentation herunterzuladen?
 
 Dann schaue in die unten recht angezeigte - zusätzliche - Menüleiste.
 
