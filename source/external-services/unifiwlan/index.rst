@@ -27,7 +27,7 @@ Die folgenden Video-Tutorials zeigen Schritt für Schritt, wie unser WLAN-Netz a
 
 
 Installation eines Debian-Servers
---------------------------------
+---------------------------------
 Der Unifi-OS-Server läuft in diesem Tutorial auf einem Debian-Server. Das folgende Video-Tutorial zeigt die Installation und Integration eines leeren Debian-Servers.
 
 .. raw:: html
@@ -35,7 +35,7 @@ Der Unifi-OS-Server läuft in diesem Tutorial auf einem Debian-Server. Das folge
    <iframe title="02_DebianServer" width="560" height="315" src="https://peertube.flbcloud.de/videos/embed/xgo1cKJFvF9YBPCUbTSYQm" style="border: 0px;" allow="fullscreen" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>  
 
 Installation und Grundeinrichtung des Unifi-OS-Servers
------------------------------------------------------
+------------------------------------------------------
 Jetzt wird der eigentliche Unifi-OS-Server eingerichtet.
 
 .. raw:: html
