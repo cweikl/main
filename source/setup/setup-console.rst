@@ -38,8 +38,64 @@ gestartet.
 
 Erfolgt der Aufruf direkt mittels ``linuxmuster-setup``, fragt das Setup verschiedene Parameter ab.
 
-Bei nicht festgelegten, siehst Du die standardmäßig vorbelegten Werte. Prüfe alle Parameter und passe deren Werte gegebenenfalls an.
+Folgende Parameter zur Übergabe beim Aufruf des Befehls können übergeben werden:
 
+.. code::
+
+   linuxmuster-setup --help
+
+   Usage: linuxmuster-setup [options]
+   [options] may be:
+   -n <hostname>,   --servername=<hostname>   : Set server hostname.
+   -d <domainname>, --domainname=<domainname> : Set domainname.
+   -r <dhcprange>,  --dhcprange=<dhcprange>   : Set dhcp range.
+   -a <adminpw>,    --adminpw=<adminpw>       : Set admin password.
+   -e <schoolname>, --schoolname=<schoolname> : Set school name.
+   -l <location>,   --location=<location>     : Set school location.
+   -z <country>,    --country=<country>       : Set school country.
+   -v <state>,      --state=<state>           : Set school state.
+   -c <file>,       --config=<file>           : path to ini file with setup values
+   -u,              --unattended              : unattended mode, do not ask questions
+   -s,              --skip-fw                 : skip firewall setup per ssh
+   -h,              --help                    : print this help
+
+Du kannst mehrere Parameter beim Aufruf direkt mit übergeben:
+
+.. code::
+
+   linuxmuster-setup --location="Bad Tuxhausen" --schoolname="Linus-Benedict-Gesamtschule" --country=de --state=SH
+
+Du kannst auch eine Konfigurationsdatei als Textdatei erstellen und dort die Parameter mit den gewünschten Werten eintragen.
+Lege dazu eine neue Textdatei unter ``/root/setupconfig.txt`` mit folgendem Befehl an:
+
+.. code::
+
+   echo -e "[setup] \nservername = \ndomainname = \ndhcprange = \nschoolname = \nlocation = \ncountry = \nstate = \nskipfw = False" > /root/setupconfig.txt
+
+Um nun die Werte einzufügen, editiere diese mit dem Texteditor ``nano``:
+
+.. code::
+
+   nano /root/setupconfig.txt
+
+
+.. figure:: media/newsetup/lmn-setup-terminal-01a.png
+   :align: center
+   :alt: Terminal Setup: setupconfig.txt
+   :width: 80%
+
+   Terminal Setup: Parameter in einer Textdatei festlegen
+
+Hast Du diese Textdatei mit deinen Einträgen gespeichert ``[Strg]+[X] –> [Y] –> [Enter]``, kannst Du das Setup mit folgendem Befehl aufrufen:
+
+.. code::
+
+   linuxmuster-setup --config /root/setupconfig.txt
+
+Nach dem Aufruf, erscheinen in der Konsole nach und nach nochmals die Parameter. Hattest Du diese bereits festgelegt, so siehst Du Deine Werte.
+
+
+Bei nicht festgelegten, siehst Du die standardmäßig vorbelegten Werte. Prüfe alle Parameter und passe deren Werte gegebenenfalls an.
 Klicke jeweils auf ``< OK >``, um zum nächsten Schritt zu gelangen.
 
 .. figure:: media/newsetup/lmn-setup-terminal-02.png
@@ -164,7 +220,11 @@ Starte danach den Server neu, die OPNsense |reg| wurde bereits während des Setu
 
 Nach abgeschlossenem Setup und dem Neustart kannst Du Dich mit einem PC via Browser an der Schulkonsole von linuxmuster.net v7.4 anmelden.
 
-Nachdem sich Dein Client eine IP-Adresse via DHCP aus dem Adressbereich für die Rechneraufnahme geholt hat, ist dieses aber nicht möglich. Dessen Adressen sind aus sicherheitstechnischen Erwägungen beschränkt.
+.. hint::
+
+   Für das AD auf dem Server wurde eine Organizational Unit OU=default-school angelegt, unabhängig von dem beim Setup angegebenem Schulnamen.
+
+Nachdem sich Dein Client eine IP-Adresse via DHCP aus dem Adressbereich für die Rechneraufnahme geholt hat, ist dieses aber nicht möglich. Diese Adressen sind nur für die interne LAN-Kommunikation vorgesehen.
 
 Daher muss sich der Rechner in einem besonderen LAN-Bereich befinden - etwa mit der IPv4-Adresse 10.0.0.10/16. Diese IP-Adresse musst Du manuell in Deinem Admin-PC einrichten.
 
